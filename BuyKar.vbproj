@@ -1,0 +1,481 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{592B3F70-B57D-4A69-888F-634E923ADD44}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>WebApplication1</RootNamespace>
+    <AssemblyName>WebApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WebApplication1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WebApplication1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="about-us.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="App_Data\buykar.accdb" />
+    <Content Include="cart.aspx" />
+    <Content Include="cosmetic.aspx" />
+    <Content Include="electronics.aspx" />
+    <Content Include="fashion.aspx" />
+    <Content Include="furniture.aspx" />
+    <Content Include="grocery.aspx" />
+    <Content Include="home-appliances.aspx" />
+    <Content Include="Images\atta.png" />
+    <Content Include="Images\background.jpg" />
+    <Content Include="Images\bed.jpg" />
+    <Content Include="Images\cart.png" />
+    <Content Include="Images\cosmetic.png" />
+    <Content Include="Images\electronic.png" />
+    <Content Include="Images\fashion.png" />
+    <Content Include="Images\foundation.jpg" />
+    <Content Include="Images\fridge.png" />
+    <Content Include="Images\furniture.png" />
+    <Content Include="Images\grains.png" />
+    <Content Include="Images\grocery.png" />
+    <Content Include="Images\headphones.png" />
+    <Content Include="Images\homeappliances.png" />
+    <Content Include="Images\kajal.png" />
+    <Content Include="Images\kids-f.png" />
+    <Content Include="Images\lipstic.png" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\men-f.png" />
+    <Content Include="Images\oil.png" />
+    <Content Include="Images\s23.png" />
+    <Content Include="Images\sofa.jpg" />
+    <Content Include="Images\table.jpg" />
+    <Content Include="Images\tv.png" />
+    <Content Include="Images\washing-machine.png" />
+    <Content Include="Images\watch.png" />
+    <Content Include="Images\women-f.png" />
+    <Content Include="index.aspx" />
+    <Content Include="myaccount.aspx" />
+    <Content Include="products\atta.aspx" />
+    <Content Include="products\bed.aspx" />
+    <Content Include="products\foundation.aspx" />
+    <Content Include="products\fridge.aspx" />
+    <Content Include="products\grains.aspx" />
+    <Content Include="products\headphones.aspx" />
+    <Content Include="products\kajal.aspx" />
+    <Content Include="products\kids-f.aspx" />
+    <Content Include="products\lipstick.aspx" />
+    <Content Include="products\men-f.aspx" />
+    <Content Include="products\oil.aspx" />
+    <Content Include="products\phone.aspx" />
+    <Content Include="products\sofa.aspx" />
+    <Content Include="products\table.aspx" />
+    <Content Include="products\tv.aspx" />
+    <Content Include="products\washing-machine.aspx" />
+    <Content Include="products\watch.aspx" />
+    <Content Include="products\women-f.aspx" />
+    <Content Include="script.js" />
+    <Content Include="script2.js" />
+    <Content Include="signin.aspx" />
+    <Content Include="signup.aspx" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="style.css" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about-us.aspx.designer.vb">
+      <DependentUpon>about-us.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="about-us.aspx.vb">
+      <DependentUpon>about-us.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.vb">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.vb">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.vb">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.vb">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.vb">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.vb">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="cart.aspx.designer.vb">
+      <DependentUpon>cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cart.aspx.vb">
+      <DependentUpon>cart.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="cosmetic.aspx.designer.vb">
+      <DependentUpon>cosmetic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cosmetic.aspx.vb">
+      <DependentUpon>cosmetic.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="electronics.aspx.designer.vb">
+      <DependentUpon>electronics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="electronics.aspx.vb">
+      <DependentUpon>electronics.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="fashion.aspx.designer.vb">
+      <DependentUpon>fashion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fashion.aspx.vb">
+      <DependentUpon>fashion.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="furniture.aspx.designer.vb">
+      <DependentUpon>furniture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="furniture.aspx.vb">
+      <DependentUpon>furniture.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="grocery.aspx.designer.vb">
+      <DependentUpon>grocery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="grocery.aspx.vb">
+      <DependentUpon>grocery.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="home-appliances.aspx.designer.vb">
+      <DependentUpon>home-appliances.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="home-appliances.aspx.vb">
+      <DependentUpon>home-appliances.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="myaccount.aspx.designer.vb">
+      <DependentUpon>myaccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="myaccount.aspx.vb">
+      <DependentUpon>myaccount.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="products\atta.aspx.designer.vb">
+      <DependentUpon>atta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="products\atta.aspx.vb">
+      <DependentUpon>atta.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="products\bed.aspx.designer.vb">
+      <DependentUpon>bed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="products\bed.aspx.vb">
+      <DependentUpon>bed.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="products\foundation.aspx.designer.vb">
+      <DependentUpon>foundation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="products\foundation.aspx.vb">
+      <DependentUpon>foundation.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="products\fridge.aspx.designer.vb">
+      <DependentUpon>fridge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="products\fridge.aspx.vb">
+      <DependentUpon>fridge.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="products\grains.aspx.designer.vb">
+      <DependentUpon>grains.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="products\grains.aspx.vb">
+      <DependentUpon>grains.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="products\headphones.aspx.designer.vb">
+      <DependentUpon>headphones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="products\headphones.aspx.vb">
+      <DependentUpon>headphones.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="products\kajal.aspx.designer.vb">
+      <DependentUpon>kajal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="products\kajal.aspx.vb">
+      <DependentUpon>kajal.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="products\kids-f.aspx.designer.vb">
+      <DependentUpon>kids-f.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="products\kids-f.aspx.vb">
+      <DependentUpon>kids-f.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="products\lipstick.aspx.designer.vb">
+      <DependentUpon>lipstick.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="products\lipstick.aspx.vb">
+      <DependentUpon>lipstick.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="products\men-f.aspx.designer.vb">
+      <DependentUpon>men-f.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="products\men-f.aspx.vb">
+      <DependentUpon>men-f.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="products\oil.aspx.designer.vb">
+      <DependentUpon>oil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="products\oil.aspx.vb">
+      <DependentUpon>oil.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="products\phone.aspx.designer.vb">
+      <DependentUpon>phone.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="products\phone.aspx.vb">
+      <DependentUpon>phone.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="products\sofa.aspx.designer.vb">
+      <DependentUpon>sofa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="products\sofa.aspx.vb">
+      <DependentUpon>sofa.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="products\table.aspx.designer.vb">
+      <DependentUpon>table.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="products\table.aspx.vb">
+      <DependentUpon>table.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="products\tv.aspx.designer.vb">
+      <DependentUpon>tv.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="products\tv.aspx.vb">
+      <DependentUpon>tv.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="products\washing-machine.aspx.designer.vb">
+      <DependentUpon>washing-machine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="products\washing-machine.aspx.vb">
+      <DependentUpon>washing-machine.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="products\watch.aspx.designer.vb">
+      <DependentUpon>watch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="products\watch.aspx.vb">
+      <DependentUpon>watch.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="products\women-f.aspx.designer.vb">
+      <DependentUpon>women-f.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="products\women-f.aspx.vb">
+      <DependentUpon>women-f.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="signin.aspx.designer.vb">
+      <DependentUpon>signin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="signin.aspx.vb">
+      <DependentUpon>signin.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="signup.aspx.designer.vb">
+      <DependentUpon>signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="signup.aspx.vb">
+      <DependentUpon>signup.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Images\lipstic.webp" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Scripts\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51202</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
